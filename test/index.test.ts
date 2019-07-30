@@ -1,6 +1,5 @@
 /* tslint:disable:no-unused-expression */
-import * as proxyquire from 'proxyquire'
-import { spy } from 'sinon'
+import proxyquire from 'proxyquire'
 import { expect } from './expect'
 
 const platformMock = {
