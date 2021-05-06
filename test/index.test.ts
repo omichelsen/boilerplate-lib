@@ -16,20 +16,20 @@ describe('index', () => {
     platformMock.isMac = true
     platformMock.isWindows = false
 
-    expect(greeter()).to.eql('Hello, I\'m a Mac')
+    expect(greeter()).to.eql("Hello, I'm a Mac")
   })
 
   it('should return greeting for Windows', () => {
     platformMock.isMac = false
     platformMock.isWindows = true
 
-    expect(greeter()).to.eql('Hello, I\'m a PC')
+    expect(greeter()).to.eql("Hello, I'm a PC")
   })
 
   it('should return greeting for other platform', () => {
     platformMock.isMac = false
     platformMock.isWindows = false
 
-    expect(greeter()).to.eql('Hello, I\'m something else')
+    expect(greeter()).to.eql("Hello, I'm something else")
   })
 })
