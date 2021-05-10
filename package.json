@@ -14,7 +14,7 @@
     "build": "tsc",
     "lint": "eslint . --ext .js,.ts",
     "pretest": "yarn lint",
-    "test": "nyc --check-coverage --lines 100 mocha --reporter progress",
+    "test": "nyc mocha --reporter progress",
     "test:watch": "mocha -w --reporter min"
   },
   "nyc": {
