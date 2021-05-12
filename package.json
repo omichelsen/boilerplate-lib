@@ -13,7 +13,6 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .js,.ts",
-    "pretest": "yarn lint",
     "test": "nyc mocha --reporter progress",
     "test:watch": "mocha -w --reporter min"
   },
